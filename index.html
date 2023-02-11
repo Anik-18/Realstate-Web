@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anik's Responsive Realstate Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="logo">Anik's Creation</li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>        
+    </div>
+    <div class="banner" id="home">
+        <div class="banner-text">
+            <h2>AT Agency</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+    
+    <div class="about" id="about">
+        <div class="section-header">
+            <h2>About US</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta qui, ipsa sed expedita dignissimos illum!</p>
+        </div>
+        <div class="about-content">
+            <div class="single-about">
+                <img src="img/2.jpg" alt="">
+                <div class="about-text">
+                    <h2>Best Housing Agency</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ducimus aperiam, est ratione harum at. Earum rem facere quidem quo distinctio omnis esse. Voluptatibus, doloribus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="service" id="service">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta qui, ipsa sed expedita dignissimos illum!</p>
+        </div>
+        <div class="service-content">
+            <div class="single-service">
+                <img src="img/3.jpg" alt="">
+                <h2>Comfortable Apartment</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, voluptate, aut? Officia adipisci illo, quam!</p>
+            </div>
+            <div class="single-service">
+                <img src="img/4.jpg" alt="">
+                <h2>Affordable Price</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, voluptate, aut? Officia adipisci illo, quam!</p>
+            </div>
+            <div class="single-service">
+                <img src="img/5.jpg" alt="">
+                <h2>Luxury Designs</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, voluptate, aut? Officia adipisci illo, quam!</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="section-header">
+            <h2>Contact us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta qui, ipsa sed expedita dignissimos illum!</p>
+        </div>
+        <div class="single-contact">
+            <input type="email" placeholder="Your Email Here">
+            <input type="password" placeholder="Your Password Here">
+            <textarea cols="30" rows="10" placeholder="Your Query Here"></textarea>
+            <a href="#">Submit</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2022 | Created & Designed By <a href="https://github.com/Anik-15">S S Anik</a> 
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 50) {
+                $(".header").addClass("active");
+            } else {                
+               $(".header").removeClass("active");
+            }
+        });
+    </script>
+</body>
+</html>
